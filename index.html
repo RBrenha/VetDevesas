@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carrosel.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/opiniao.css">
+    <link rel="stylesheet" href="css/servicos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/carrosel.js"></script>
+    <script src="js/servicos.js"></script>
+    
+    <!--script src="js/cursor.js"></script-->
+    <script>
+        $(function() {
+            $('.menu_button').click(function() {
+                $(this).toggleClass('show');
+                $(".menu_sections").toggleClass("show");
+            });
+
+            $('.link').click(function(event) {
+                event.preventDefault();
+                const target = $($.attr(this, 'href'));
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 500);
+                setTimeout(function() {
+                    $('.menu_sections').removeClass('show');
+                    $('.menu_button').removeClass('show');
+                }, 600);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="topo">
+        <nav class="menu_button" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+        
+        <div class="menu_sections">
+            <ul>
+                <li><a class="link" href="#nome">Nome, Slogan e Logotipo</a></li>
+                <li><a class="link" href="#objetivos">Objetivos</a></li>
+                <li><a class="link" href="#corpoclinico">Corpo Clinico</a></li>
+                <li><a class="link" href="#especialidades">Especialidades</a></li>
+                <li><a class="link" href="#Servicos">Serviços</a></li>
+                <li><a class="link" href="#instalacoes">Instalações</a></li>
+                <li><a class="link" href="#Opinioes">Opinões</a></li>
+            </ul>
+        </div>
+    
+        <h1 class="titu">Hospital Veterinario das Devesas</h1>
+
+        <div class="container">
+            <div class="image">
+                <div class="circle"></div>
+                <img src="imgs/animal1.jpeg" alt="Cachorro">
+            </div>
+            <div class="text">
+                <h1>Cuidados Veterinários de qualidade</h1>
+                <p>Saúde e carinho para cada patinha</p>
+                <button>AGENDE UMA CONSULTA</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="nome">
+        nome, logotipo e slogan
+    </section>
+    <section id="objetivos"> Objetivos </section>
+    <section id="corpoclinico"> corpoclinico </section>
+    <section id="especialidades"> especialidades </section>
+    <section id="Servicos">
+        <div class="services-container">
+            <h2>Serviços</h2>
+            <button class="arrow left-arrow">&#8249;</button>
+            <div class="services-slider">
+                <div class="services">
+                    <div class="service">
+                        <img src="imgs/animal2.jpeg" alt="Urgências 24h">
+                        <h3>Urgências 24h</h3>
+                        <button class="reserve-button">RESERVE JÁ</button>
+                    </div>
+                    <div class="service">
+                        <img src="imgs/animal3.jpeg" alt="Consultas domiciliárias">
+                        <h3>Consultas domiciliárias</h3>
+                        <button class="reserve-button">RESERVE JÁ</button>
+                    </div>
+                    <div class="service">
+                        <img src="imgs/animal4.webp" alt="Desparasitação e vacinação">
+                        <h3>Desparasitação e vacinação</h3>
+                        <button class="reserve-button">RESERVE JÁ</button>
+                    </div>
+                    <div class="service">
+                        <img src="imgs/animal5.png" alt="Pet grooming">
+                        <h3>Pet grooming</h3>
+                        <button class="reserve-button">RESERVE JÁ</button>
+                    </div>
+                    <div class="service">
+                        <img src="imgs/med1.avif" alt="Hotel">
+                        <h3>Hotel</h3>
+                        <button class="reserve-button">RESERVE JÁ</button>
+                    </div>
+                    <div class="service">
+                        <img src="dog2.jpg" alt="Aconselhamento nutricional">
+                        <h3>Aconselhamento nutricional</h3>
+                        <button class="reserve-button">RESERVE JÁ</button>
+                    </div>
+                    <div class="service">
+                        <img src="dog2.jpg" alt="Microchip">
+                        <h3>Microchip</h3>
+                        <button class="reserve-button">RESERVE JÁ</button>
+                    </div>
+                    <div class="service">
+                        <img src="dog2.jpg" alt="Reabilitação">
+                        <h3>Reabilitação</h3>
+                        <button class="reserve-button">RESERVE JÁ</button>
+                    </div>
+                    <div class="service">
+                        <img src="dog2.jpg" alt="Cirurgia">
+                        <h3>Cirurgia</h3>
+                        <button class="reserve-button">RESERVE JÁ</button>
+                    </div>
+                    <div class="service">
+                        <img src="dog2.jpg" alt="Realização de análises">
+                        <h3>Realização de análises</h3>
+                        <button class="reserve-button">RESERVE JÁ</button>
+                    </div>
+                    <div class="service">
+                        <img src="dog2.jpg" alt="Imagiologia">
+                        <h3>Imagiologia</h3>
+                        <button class="reserve-button">RESERVE JÁ</button>
+                    </div>
+                    <!-- Adicione mais serviços aqui -->
+                </div>
+            </div>
+            <button class="arrow right-arrow">&#8250;</button>
+        </div>
+    </section>
+    <section id="instalacoes"> instalacoes </section>
+    <section id="Opinioes">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="reviews">
+                        <!-- Testimonial 1 -->
+                        <div class="review">
+                            <div class="review-content">
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor
+                                    molestias mollitia ut."
+                                </p>
+                            </div>
+                            <div class="review-info">
+                                <img src="https://static.pexels.com/photos/529928/pexels-photo-529928.jpeg" alt="Krystal">
+                                <h3>Krystal</h3>
+                            </div>
+                        </div>
+    
+                        <!-- Testimonial 2 -->
+                        <div class="review">
+                            <div class="review-content">
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam corporis cumque
+                                    debitis."
+                                </p>
+                            </div>
+                            <div class="review-info">
+                                <img src="https://static.pexels.com/photos/529928/pexels-photo-529928.jpeg" alt="Jhonson">
+                                <h3>Jhonson</h3>
+                            </div>
+                        </div>
+    
+                        <!-- Testimonial 3 -->
+                        <div class="review">
+                            <div class="review-content">
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dignissimos reprehenderit
+                                    maiores."
+                                </p>
+                            </div>
+                            <div class="review-info">
+                                <img src="https://static.pexels.com/photos/529928/pexels-photo-529928.jpeg" alt="David">
+                                <h3>David</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Autor do site: Rafaela Brenha</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com" target="_blank" title="Instagram">
+            <img src="../imgs/Insta.jpeg" alt="Instagram">
+          </a>
+          <a href="https://www.youtube.com" target="_blank" title="YouTube">
+            <img src="../imgs/youtube.png" alt="YouTube">
+          </a>
+        </div>
+        <p class="rights">© 2025 Rafaela Brenha. Todos os direitos reservados.</p>
+        <p class="terms">
+          <a href="#privacy-policy" title="Política de Privacidade">Política de Privacidade</a> |
+          <a href="#terms-of-service" title="Termos de Serviço">Termos de Serviço</a>
+        </p>
+    </footer>
+
+    <script src="js/cursor.js"></script>
+</body>
+</html>

@@ -258,8 +258,8 @@ h2 {
 }
 
 .testemunho {
-    background-color: rgba(255, 77, 13, 0.9);
-    color: rgb(148, 218, 255);
+    background-color: rgba(13, 255, 178, 0.9);
+    color: rgb(0, 0, 0);
     border-radius: 12px;
     padding: 20px;
     text-align: left;

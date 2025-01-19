@@ -1,0 +1,65 @@
+.especialidades {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #cce7ff;
+}
+
+.especialidades h2 {
+    font-size: 36px;
+    color: #004085;
+    margin-bottom: 20px;
+}
+
+.especialidades .descricao {
+    font-size: 16px;
+    color: #004085;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px;
+    justify-items: center;
+}
+
+.card {
+    display: flex; /* Flexbox para colocar a imagem e o texto lado a lado */
+    background-color: rgb(239, 239, 239);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 20px;
+    height: 300px; /* Tamanho fixo para o card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 80%; /* Ajusta a largura para ocupar 100% da coluna */
+}
+
+.card img {
+    width: 300px; /* Aumenta a largura da imagem */
+    height: 100%; /* A imagem ocupa toda a altura do card */
+    object-fit: cover; /* Assegura que a imagem cubra a área sem distorcer */
+    border-radius: 15px;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #004085;
+    margin-left: 20px;
+    align-self: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+    }
+}

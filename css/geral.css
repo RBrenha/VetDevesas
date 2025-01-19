@@ -248,7 +248,7 @@ h2 {
 }
 
 .areaTestemunhos h2 {
-    font-size: 30px;
+    font-size: 50px;
     font-family: "Roboto Condensed", serif;
 }
 
@@ -264,6 +264,11 @@ h2 {
     border-radius: 12px;
     padding: 20px;
     text-align: left;
+    transition: transform 0.4s ease;
+}
+
+.testemunho:hover {
+    transform: scale(1.1);
 }
 
 .testemunho .titulo {

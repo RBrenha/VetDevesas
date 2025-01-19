@@ -1,49 +1,140 @@
-.titulos{
-    top: 50px;
+/* Estilo para a seção de serviços */
+.servicos {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
 }
 
-p {
-    color: rgb(240, 0, 0);
-    margin: 0 auto;
-    max-width: 600px;
-    font-size: 1rem;
-    line-height: 1.5;
+.servicos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Secção de Especialidades */
+.especialidades {
+  margin-bottom: 40px;
+}
+
+.especialidades h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2D4E9A;
+}
+
+.tipos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.service {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  height: 450px; /* Define uma altura fixa para uniformizar os cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin: 15px 15px 10px;
+  color: #333;
+  min-height: 50px; /* Garante altura mínima para os títulos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0 15px 20px;
+  flex-grow: 1; /* Preenche o espaço disponível */
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.reserve-button {
+  display: inline-block;
+  background: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 20px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: center; /* Centraliza o botão */
+}
+
+.reserve-button:hover {
+  background: #45a049;
+}
+
+.mais {
+  margin-top: 30px;
+}
+
+.mais a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #4caf50;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.mais a:hover {
+  color: #388e3c;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .tipos {
+      flex-direction: column;
+      align-items: center;
   }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 40px 20px;
+  .service {
+      width: 90%;
+      height: auto; /* Altura ajusta no mobile */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tipos {
+      gap: 15px;
   }
 
-  .card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    text-align: center;
-    padding: 20px;
+  .service {
+      width: 45%;
+      height: auto; /* Altura ajusta no mobile */
   }
+}
 
-  .card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-
-  .card h3 {
-    color: #3949ab;
-    font-size: 1.2rem;
-    margin: 10px 0;
-  }
-
-  .card p {
-    color: #666;
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
+.color{
+  background-color: rgb(181, 181, 181);
+  padding: 1px 20px 0 20px;
+  border-radius: 30px;
+}

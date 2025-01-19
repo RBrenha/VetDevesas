@@ -1,0 +1,114 @@
+/* Estilo para o contêiner geral */
+
+.titulo{
+    font-size: 3rem;
+    color: #333;
+    position: auto;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.slider-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    margin-top: 0;
+}
+
+/* Área da imagem */
+.image-display {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    height: 80%;
+}
+
+.image-display img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+}
+
+/* Slider vertical */
+.slider {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.slider-item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #328ff9;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.slider-item:hover {
+    background-color: #26a7f7;
+    transform: scale(1.1);
+    cursor: none;
+}
+
+.slider-item.active {
+    background-color: #0259f9;
+    transform: scale(1.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .slider-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-display {
+        height: 50%;
+        margin-bottom: 20px;
+    }
+
+    .slider {
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .slider-item {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Estilo para a legenda do slider */
+.slider-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
